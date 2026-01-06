@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-tachometer-alt"></i> Team Dashboard</h1>
+            <div class="last-updated">
+                Last Updated: <span id="lastUpdated"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Metrics Section -->
+        <section class="metrics-section">
+            <h2>Operations Metrics</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <div class="metric-content">
+                        <h3>Copper Runs</h3>
+                        <div class="metric-value" id="copperRuns">--</div>
+                        <div class="metric-label">Completed</div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="metric-content">
+                        <h3>Fiber Runs</h3>
+                        <div class="metric-value" id="fiberRuns">--</div>
+                        <div class="metric-label">Completed</div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-th-large"></i>
+                    </div>
+                    <div class="metric-content">
+                        <h3>Bricks Patched</h3>
+                        <div class="metric-value" id="bricksPatched">--</div>
+                        <div class="metric-label">Completed</div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="metric-content">
+                        <h3>Fusion Racks</h3>
+                        <div class="metric-value" id="fusionRacks">--</div>
+                        <div class="metric-label">Patched</div>
+                    </div>
+                </div>
+
+                <div class="metric-card error-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="metric-content">
+                        <h3>Errors/Rework</h3>
+                        <div class="metric-value" id="errorsRework">--</div>
+                        <div class="metric-label">Total</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Updates Section -->
+        <section class="updates-section">
+            <div class="updates-container">
+                <div class="company-updates">
+                    <h2><i class="fas fa-building"></i> Company Updates</h2>
+                    <div id="companyUpdates" class="updates-list">
+                        <!-- Updates will be loaded here -->
+                    </div>
+                </div>
+
+                <div class="site-updates">
+                    <h2><i class="fas fa-map-marker-alt"></i> Site Information</h2>
+                    <div id="siteUpdates" class="updates-list">
+                        <!-- Site info will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Team Dashboard | <button id="refreshBtn" class="refresh-btn"><i class="fas fa-sync-alt"></i> Refresh Data</button></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

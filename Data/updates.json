@@ -1,0 +1,36 @@
+{
+    "company": [
+        {
+            "date": "2026-01-06",
+            "title": "Q1 Goals Announced",
+            "content": "New quarterly targets have been set with focus on fiber deployment and quality improvements. Team leads will receive detailed metrics by end of week."
+        },
+        {
+            "date": "2026-01-03",
+            "title": "Safety Training Reminder",
+            "content": "All team members must complete updated safety certification by January 15th. Online modules are available on the training portal."
+        },
+        {
+            "date": "2025-12-28",
+            "title": "Holiday Schedule Update",
+            "content": "Normal operations resume January 2nd. Emergency contact information has been updated in the system."
+        }
+    ],
+    "site": [
+        {
+            "date": "2026-01-06",
+            "title": "Building A - Fiber Installation Progress",
+            "content": "Fiber runs completed on floors 1-3 ahead of schedule. Floor 4 installation scheduled for tomorrow morning. Great work team!"
+        },
+        {
+            "date": "2026-01-05",
+            "title": "New Equipment Delivery",
+            "content": "Two new fusion splicers have arrived and are available for checkout from the equipment room. Training session scheduled for Wednesday."
+        },
+        {
+            "date": "2026-01-04",
+            "title": "Parking Lot Maintenance",
+            "content": "South parking lot will be resurfaced January 8-9. Please use north entrance during this time."
+        }
+    ]
+}
